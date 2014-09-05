@@ -40,10 +40,12 @@ gem 'spring',        group: :development
 
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass', '~> 3.2.0'
+gem 'cancancan', '~> 1.9'
 gem 'devise'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0'
   gem 'factory_girl_rails'
   gem 'capybara'
+  gem 'byebug'
 end
