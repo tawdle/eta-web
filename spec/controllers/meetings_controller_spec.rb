@@ -2,8 +2,8 @@ require 'rails_helper'
 
 RSpec.describe MeetingsController, :type => :controller do
 
-  let(:valid_attributes) { { description: "A valid meeting description" } }
-  let(:invalid_attributes) { { description: "" } }
+  let(:valid_attributes) { { description: "A valid meeting description", location: "A valid meeting location" } }
+  let(:invalid_attributes) { { description: "", location: "" } }
 
   context "with a signed in user" do
     let(:user) { FactoryGirl.create(:user) }

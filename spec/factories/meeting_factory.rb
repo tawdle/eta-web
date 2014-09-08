@@ -4,5 +4,6 @@ FactoryGirl.define do
   factory :meeting do
     user
     description "My important meeting"
+    location "543 Howard Street, San Francisco, CA, United States"
   end
 end

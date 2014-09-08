@@ -17,5 +17,10 @@ RSpec.describe Meeting, :type => :model do
       meeting.description = nil
       expect(meeting).not_to be_valid
     end
+
+    it "requires a location" do
+      meeting.location = nil
+      expect(meeting).not_to be_valid
+    end
   end
 end
