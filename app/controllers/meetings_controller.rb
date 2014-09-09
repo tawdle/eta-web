@@ -61,6 +61,6 @@ class MeetingsController < ApplicationController
   private
     # Never trust parameters from the scary internet, only allow the white list through.
     def meeting_params
-      params.fetch(:meeting, {}).permit(:description, :location).merge(user: current_user)
+      params.fetch(:meeting, {}).permit(:description, :location, :contacts).merge(user: current_user)
     end
 end
